@@ -1,0 +1,343 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family:  Roboto, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    --mainColor: #FFDB00;
+    --slogan: 54px;
+    --brandNameSize: 38px;
+    --headerItemsSize: 17px;
+    --descriptionSize: 31px;
+    --buttonSize: 32px;
+}
+main{
+    margin: 0;
+    padding: 0;
+}
+.section1{
+    width: 100%;
+    height: 103vh;
+    background:  linear-gradient(137deg,rgba(0, 3, 29, 0.973) 38%, rgba(1, 25, 87, 0.336)), url(assets/fondo.jpg) no-repeat;    
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000920+44,000920+100,ffffff+100&0.94+40,0+100 */
+    background: -moz-linear-gradient(-45deg,  rgba(0,9,32,0.94) 40%, rgba(0,9,32,0.88) 44%, rgba(255,255,255,0) 100%) , url(assets/fondo.jpg) no-repeat; /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg,  rgba(0,9,32,0.94) 40%,rgba(0,9,32,0.88) 44%,rgba(255,255,255,0) 100%) , url(assets/fondo.jpg) no-repeat; /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg,  rgba(0,9,32,0.94) 40%,rgba(0,9,32,0.88) 44%,rgba(255,255,255,0) 100%) , url(assets/fondo.jpg) no-repeat; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0000920', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    background-size: cover;
+    padding: 0;
+    margin: -3vh 0 0;
+}
+header{
+    width: 80%;
+    margin: auto;
+    padding-top: 3%;
+    display: grid;
+    grid-template-columns: 25% 40%;
+    column-gap: 30%;   
+    align-items: center;
+}
+.toggle{
+    display: none;
+}
+
+.navItems{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    list-style-type: none;
+    font-size: var(--headerItemsSize);
+    letter-spacing: 1px;
+}
+.navItems li a{
+    text-decoration: none;
+    color:white;
+}
+.brand h1{
+    font-size: var(--brandNameSize);
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--mainColor);
+    letter-spacing: 1px;
+}
+.magnetPhrase{
+    width: 81%;
+    margin: auto;
+    margin-top: 15vh;
+}
+.magnetPhrase h2{
+    font-size: var(--slogan);
+    color: white;
+    font-weight: 400;
+    margin-bottom: 0;
+    letter-spacing: 1px;
+    line-height: 98%;
+}
+.magnetPhrase p{
+    font-size: var(--descriptionSize);
+    color: white;
+    font-weight: 100;
+    margin-top: 0;
+    letter-spacing: 1px;
+}
+.mainButton{
+    width: 80%;
+    margin: 7vh auto;
+}
+.mainButton a{
+    padding: 0.4rem 1rem;
+    text-decoration: none;
+    font-size: var(--buttonSize);
+    font-weight: 500;
+    letter-spacing: 2px;
+    border-radius: 1rem;
+    color: var(--mainColor);
+    border-style: solid;
+    border-color: var(--mainColor);
+
+}
+
+.section2{
+    background-image: linear-gradient(to bottom, #00031d, #040c29, #031336, #011843, #001c50, #02245e, #042c6c, #05347a, #08428d, #0851a0, #0661b3, #0071c7);
+}
+.container{
+    width: 81%;
+    margin: auto;
+}
+
+.Desc{
+    display: grid;
+    grid-template-columns: 45% 45%;
+    column-gap: 10%;
+    padding: 5rem 0 0;
+}
+.Desc img{
+    width: 100%;
+}
+
+.Desc h3{
+    font-size: 24px;
+    color: rgb(182, 182, 182);
+}
+
+.Desc p{
+    font-size: 18px;
+    color: rgb(182, 182, 182);
+}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 1200px) {
+
+    body{
+        --slogan: 45px;
+        --headerItemsSize: 15px;
+        --brandNameSize: 30px;        
+        --descriptionSize: 25px;
+        --buttonSize: 27px;
+    }
+    header{
+        grid-template-columns: 25% 55%;
+        column-gap: 20%;   
+
+    }
+    
+
+}
+
+@media only screen and (max-width: 992px) {
+    body{
+        --slogan: 36px;
+        --brandNameSize: 27px;
+        --buttonSize: 19px;        
+    }
+    header{
+        grid-template-columns: 25% 55%;
+        column-gap: 20%;   
+    }
+    .magnetPhrase{
+        margin: auto;
+        margin-top: 10vh;
+    }
+    
+}
+
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+
+    body{
+        --slogan: 27px;
+        --headerItemsSize: 13px;
+        --brandNameSize: 22px;
+        --descriptionSize: 20px;
+        --buttonSize: 15px;        
+    }
+    header{
+        width: 85%;
+        grid-template-columns: 25% 65%;
+        column-gap: 10%;   
+    }
+    .magnetPhrase{
+        margin-top: 16vh;
+    }
+    
+
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+    body{
+        --slogan: 70px;
+        --headerItemsSize: 15px;
+        --brandNameSize: 25px;
+        --descriptionSize: 34px;
+        --buttonSize: 30px;        
+    }
+    .toggle{
+        display: flex;
+        width: 2rem;
+        margin: 0.5rem auto 0;
+        height: 2rem;
+        align-items: center;
+        border-radius: 15%;
+    }
+    .toggleLine, 
+    .toggleLine::before, 
+    .toggleLine::after{
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        position: relative;
+        width: 70%;
+        margin: auto;
+        height: 3px;
+        background-color: var(--mainColor);
+        border-radius: 1rem;
+        transition: background .5s, top .5s, transform .5s;
+    }
+
+
+    .toggleLine::before, .toggleLine::after{
+        content: "";
+        position: absolute;
+        width: 100%;
+        top: 0.5rem;
+    }
+
+    .toggleLine::before{
+        top: -0.5rem;
+    }
+    
+    .active .toggleLine::after{
+        top: 0;
+        transform: rotate(45deg);
+    }
+    
+    .active .toggleLine::before{
+        top: 0;
+        transform: rotate(-45deg);
+    }
+
+    .active .toggleLine{
+        background: transparent;
+    }
+
+    header{
+        width: 100%;
+        grid-template-columns: 20% 60%;
+        column-gap: 0;
+        background-color: rgba(0, 0, 32, 0.788);
+        text-align: center;
+    }
+    .navItems{
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        padding:0;
+        width: 100vw;
+       
+        
+    }
+
+    .active .navItems{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+
+    .navItems li{
+        padding: 15px 0;
+    }
+    header h1{
+        margin: 10px auto 10px;
+    }
+    .magnetPhrase{
+        margin-top: 8vh;
+        text-align: center;
+        width: 90%;
+    }
+    .mainButton{
+        text-align: center;
+        margin-top: 10vh;
+    }
+
+
+}
+
+@media only screen and (max-width: 480px) {
+    body{
+        --slogan: 50px;
+        --headerItemsSize: 15px;
+        --brandNameSize: 25px;
+        --descriptionSize: 28px;
+        --buttonSize: 26px;        
+    }
+     .magnetPhrase{
+        margin-top: 10vh;
+        text-align: center;
+    }
+
+}
+
+@media only screen and (max-width: 450px) {
+    body{
+        --slogan: 40px;
+        --headerItemsSize: 15px;
+        --brandNameSize: 25px;
+        --descriptionSize: 18px;
+        --buttonSize: 22px;        
+    }
+    .magnetPhrase{
+        margin-top: 10vh;
+        text-align: center;
+    }
+
+}
+
+/* Extra small devices (phones, 450px and down) */
+@media only screen and (max-width: 300px) {
+
+    body{
+        --slogan: 28px;
+        --headerItemsSize: 13px;
+        --brandNameSize: 15px;
+        --descriptionSize: 16px;
+        --buttonSize: 17px;        
+    }
+    .magnetPhrase{
+        margin-top: 13vh;
+        text-align: center;
+    }
+
+
+}
+
+
+
+
+
+
+
