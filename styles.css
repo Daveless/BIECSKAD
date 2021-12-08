@@ -25,13 +25,11 @@ main{
     background: linear-gradient(135deg,  rgba(0,9,32,0.94) 40%,rgba(0,9,32,0.88) 44%,rgba(255,255,255,0) 100%) , url(assets/fondo.jpg) no-repeat; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0000920', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
     background-size: cover;
+    background-attachment: fixed;
     padding: 0;
     margin: -3vh 0 0;
 }
-
 /*header */
-
-
 header{
     width: 80%;
     margin: auto;
@@ -44,7 +42,6 @@ header{
 .toggle{
     display: none;
 }
-
 .navItems{
     display: flex;
     justify-content: space-between;
@@ -64,9 +61,7 @@ header{
     color: var(--mainColor);
     letter-spacing: 1px;
 }
-
 /*content*/
-
 .magnetPhrase{
     width: 81%;
     margin: auto;
@@ -101,15 +96,11 @@ header{
     color: var(--mainColor);
     border-style: solid;
     border-color: var(--mainColor);
-
 }
-
-
 .container{
     width: 81%;
     margin: auto;
 }
-
 .Desc{
     display: grid;
     grid-template-columns: 48% 48%;
@@ -121,19 +112,15 @@ header{
     border-radius: 1rem;
     box-shadow: -0.5em 0.5em 1em rgb(0 0 0 / 50%);
 }
-
 .Desc h3{
     font-size: 24px;
     color: var(--whiteColor);
 }
-
 .Desc p{
     font-size: 18px;
     color: var(--whiteColor);
     padding: 0;
 }
-
-
 .textContainer{
     padding: 0;
 }
@@ -182,7 +169,6 @@ footer{
     padding: 0.7rem;
     border-width: 2px;
 }
-
 .mediaIcon{
     width: 100%;
     filter: invert(85%) sepia(100%) saturate(4076%) hue-rotate(342deg) brightness(94%) contrast(113%);  
@@ -192,10 +178,7 @@ footer p{
     font-size: 21px;
     margin: 0 auto 1rem;
 }
-
-@media only screen and (max-width: 1200px) {
-
-    
+@media only screen and (max-width: 1200px) {    
     body{
         --slogan: 45px;
         --headerItemsSize: 15px;
@@ -208,10 +191,7 @@ footer p{
         column-gap: 20%;   
 
     }
-    
-
 }
-
 @media only screen and (max-width: 992px) {
     body{
         --slogan: 36px;
@@ -239,12 +219,8 @@ footer p{
         width: 30%;
     }
 }
-
-
-
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (max-width: 768px) {
-
     body{
         --slogan: 27px;
         --headerItemsSize: 13px;
@@ -260,11 +236,7 @@ footer p{
     .magnetPhrase{
         margin-top: 16vh;
     }
-    
-
 }
-
-
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (max-width: 600px) {
     body{
@@ -296,33 +268,26 @@ footer p{
         border-radius: 1rem;
         transition: background .5s, top .5s, transform .5s;
     }
-
-
     .toggleLine::before, .toggleLine::after{
         content: "";
         position: absolute;
         width: 100%;
         top: 0.5rem;
     }
-
     .toggleLine::before{
         top: -0.5rem;
-    }
-    
+    }    
     .active .toggleLine::after{
         top: 0;
         transform: rotate(45deg);
-    }
-    
+    }    
     .active .toggleLine::before{
         top: 0;
         transform: rotate(-45deg);
     }
-
     .active .toggleLine{
         background: transparent;
     }
-
     header{
         width: 100%;
         grid-template-columns: 20% 60%;
@@ -347,28 +312,22 @@ footer p{
     .Desc p{
         font-size: 19px;
         margin-top: 1rem;
-    }
-    
+    }    
     .Desc{
         display:grid;
         grid-template-columns: 100%;
     }
-
     .textContainer{
         order:2;
     }
     .imgContainer{
         order:1;
     }
-
     .active .navItems{
         display: flex;
         align-items: center;
         justify-content: center;
     }
-
-
-
     .navItems li{
         padding: 15px 0;
     }
@@ -387,9 +346,7 @@ footer p{
     .mediaButtons{
         width: 60%;
     }
-
 }
-
 @media only screen and (max-width: 480px) {
     body{
         --slogan: 50px;
@@ -402,9 +359,7 @@ footer p{
         margin-top: 10vh;
         text-align: center;
     }
-
 }
-
 @media only screen and (max-width: 450px) {
     body{
         --slogan: 40px;
@@ -417,9 +372,7 @@ footer p{
         margin-top: 10vh;
         text-align: center;
     }
-
 }
-
 /* Extra small devices (phones, 450px and down) */
 @media only screen and (max-width: 300px) {
 
