@@ -1,0 +1,148 @@
+main{
+    background-image: none;
+}
+body{
+    --blue: rgba(0, 3, 29, 0.973);
+    background-color: var(--blue);
+    --tittleSize: calc(1em + 3vw);
+    --logoSize: calc(1em + 2vw);
+    --magnetSize: calc(1.1em + 1vw);
+    --buttonSize: calc(0.2rem + 1.9vw);
+    --buyButtonSize: 1.1em;
+    --prizeSize: 1.5em;
+    --productTittleSize: 1.3em;
+}
+header{
+    width: 80%;
+    padding: 0 10% 0 10%;
+    background-color: var(--blue);
+}
+body{
+    background-color: var(--blue);
+}
+.galleryDesc h1, p{
+    color: rgb(240, 240, 240);
+    text-align: center;
+}
+.galleryDesc h1{
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 1rem auto 0;
+}
+hr{
+    width: 20%;
+}
+
+.galleryDesc p{
+    font-size: var(--buyButtonSize);
+}
+
+.allProducts{
+    width: 90%;
+    margin: 2rem auto;
+    display: grid;
+    /*grid-template-columns: 1fr 1fr 1fr 1fr;*/
+    grid-template-columns: repeat(auto-fill, minmax(174px, 1fr));
+    column-gap: 4rem;
+    row-gap: 1rem;
+    align-items: center;
+    text-align: center;
+}
+.cards{
+    width: 100%;
+    background-color: #121847f8;
+    border-radius: 0.7em;
+    padding: 1em;
+    box-shadow: -0.5em 0.5em 1em rgba(0, 0, 0, 0.3)
+}
+.cards img{
+    width: 100%;
+    margin: 1rem auto .1rem;
+    border-radius: 1rem;
+}
+.productName{
+    font-size: var(--productTittleSize);
+    color: rgb(240, 240, 240);
+    margin: 0;
+}
+.productPrize{
+    font-size: var(--prizeSize);
+    color: rgb(240, 240, 240);
+    margin: 0 0 0.5em;
+}
+.cards a{
+    text-decoration: none;
+    color: rgb(240, 240, 240);
+}
+.buttonContainer{
+    background-color: #FFDB00;
+    padding: 0.5em 0.3em;
+    border-radius: 0.5em;
+    padding: 0.5em 0.8em;
+}
+.buttonContainer p{
+    color: #00031df8;
+    margin: 0;
+    font-size: var(--buyButtonSize);
+}
+
+@media (max-width: 768px){
+    
+    
+    body{
+    --tittleSize: calc(1.6em + 3vw);
+    --logoSize: calc(1.6em + 2vw);
+    --magnetSize: calc(1.3em + 1vw);
+    --buttonSize: calc(1em + 1.9vw);
+    --buyButtonSize: 1.7em;
+    --prizeSize: 1.8em;
+    --productTittleSize: 1.9em;
+    
+    .allProducts{
+        column-gap: 4.1em;
+    }
+}
+@media (max-width: 644px) {
+    body{
+        margin-top:0.5em;
+        --buttonSize: calc(1em + 1.9vw);  
+        --logoSize: calc(1rem + 2vw);
+        --magnetSize: calc(0.9rem + 1vw);
+        --buyButtonSize: 1.2em;
+        --prizeSize: 1.4em;
+        --productTittleSize: 1.5em;
+        }
+    }
+@media (max-width: 572px){
+    body{
+        --buttonSize: calc(1rem + 1.9vw);    
+        --tittleSize: calc(1.4rem + 3vw);
+        --logoSize: calc(0.7rem + 2vw);
+        }
+        
+    .allProducts{
+        grid-template-columns: 40% 40%;
+        width: 95%;
+        margin: auto;
+        column-gap: 15%;
+    }
+}
+@media (max-width: 450px) {
+    body{
+        --buyButtonSize: 1em;
+        --prizeSize: 1.2em;
+        --productTittleSize: 1.3em;
+        }
+    
+}
+
+@media (max-width: 340px) {
+    .allProducts{
+        grid-template-columns: 1fr;
+        width: 80%;
+        margin: auto;
+    }
+    .cards{
+        margin-left: -5%;
+    }
+}

@@ -1,0 +1,47 @@
+body{
+    --blue: #00031df8;
+    background-color: var(--blue);
+}
+header{
+    width: 80%;
+    padding: 0 10% 0 10%;
+    background-color: var(--blue);
+}
+main h1{
+    color: white;
+    text-align: center;
+    margin: 3rem;
+}
+.aboutPicture{
+    width: 100%;
+    height: 40vh;
+    background:  linear-gradient(137deg,rgba(0, 3, 29, 0.973) 38%, rgba(1, 25, 87, 0.336)), url(assets/about.jpg) no-repeat;    
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000920+44,000920+100,ffffff+100&0.94+40,0+100 */
+    background: -moz-linear-gradient(-283deg,  rgba(0,9,32,0.94) 40%, rgba(0,9,32,0.88) 44%, rgba(255,255,255,0) 100%) , url(assets/about.jpg) no-repeat; /* FF3.6-15 */
+    background: -webkit-linear-gradient(-283deg,  rgba(0,9,32,0.94) 40%,rgba(0,9,32,0.88) 44%,rgba(255,255,255,0) 100%) , url(assets/about.jpg) no-repeat; /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg,  rgba(0,9,32,0.94) 40%,rgba(0,9,32,0.88) 44%,rgba(255,255,255,0) 100%) , url(assets/about.jpg) no-repeat; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0000920', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    background-size: cover;
+    background-position: center;
+}
+body{
+    background-color: var(--blue);
+}
+main{
+    background-image: none;
+}
+main p, h2{
+    color: white;
+}
+.textBox{
+    width: 80%;
+    margin: auto;
+}
+.mainAbout{
+    background-color: var(--blue);
+}
+footer{
+    margin-top: -1rem;
+    padding-top: 9rem;
+    background-color: var(--blue);
+}
